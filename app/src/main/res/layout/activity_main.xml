@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgriund"
+    tools:context="com.example.shenron.quizapp.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="1. Who is the father of JAVA?" />
+
+            <RadioGroup
+                android:id="@+id/java_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/james"
+                    style="@style/answers_style"
+                    android:text="James Gosling" />
+
+                <RadioButton
+                    android:id="@+id/dennis"
+                    style="@style/answers_style"
+                    android:text="Dennis Ritchie" />
+
+                <RadioButton
+                    android:id="@+id/bjarne"
+                    style="@style/answers_style"
+                    android:text="Bjarne Stroustrup" />
+
+                <RadioButton
+                    android:id="@+id/vint"
+                    style="@style/answers_style"
+                    android:text="Vint Cerf" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="2. When was The World Bank Created?" />
+
+            <RadioGroup
+                android:id="@+id/world_bank_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/one994"
+                    style="@style/answers_style"
+                    android:text="1994" />
+
+                <RadioButton
+                    android:id="@+id/one984"
+                    style="@style/answers_style"
+                    android:text="1984" />
+
+                <RadioButton
+                    android:id="@+id/one988"
+                    style="@style/answers_style"
+                    android:text="1988" />
+
+                <RadioButton
+                    android:id="@+id/one978"
+                    style="@style/answers_style"
+                    android:text="1978" />
+            </RadioGroup>
+
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="3. What is the Distance from Sun to Earth?" />
+
+            <RadioGroup
+                android:id="@+id/earth_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/one94"
+                    style="@style/answers_style"
+                    android:text="194.3 Million km" />
+
+                <RadioButton
+                    android:id="@+id/oneBillion"
+                    style="@style/answers_style"
+                    android:text="1 Billion km" />
+
+                <RadioButton
+                    android:id="@+id/one16"
+                    style="@style/answers_style"
+                    android:text="119.1 Million km" />
+
+                <RadioButton
+                    android:id="@+id/one49"
+                    style="@style/answers_style"
+                    android:text="149.6 Million km" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="4. The distance light travels in one year is approximately 5,870,000,000,000 miles.The distance light travels in 100 years is:" />
+
+            <RadioGroup
+                android:id="@+id/distance_radio_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp">
+
+                <RadioButton
+                    android:id="@+id/five87"
+                    style="@style/answers_style"
+                    android:text="587 × 10^8 miles" />
+
+                <RadioButton
+                    android:id="@+id/five10"
+                    style="@style/answers_style"
+                    android:text="587 × 10^10 miles" />
+
+                <RadioButton
+                    android:id="@+id/five"
+                    style="@style/answers_style"
+                    android:text="587 × 10 miles" />
+
+                <RadioButton
+                    android:id="@+id/five12"
+                    style="@style/answers_style"
+                    android:text="587 × 1012 miles" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/question_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="5. Best place to study is:" />
+
+            <CheckBox
+                android:id="@+id/udacity_checkbox"
+                style="@style/answers_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Udacity" />
+
+            <CheckBox
+                android:id="@+id/school_checkbox"
+                style="@style/answers_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="School" />
+
+            <CheckBox
+                android:id="@+id/friend_checkbox"
+                style="@style/answers_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="With friends" />
+
+            <EditText
+                android:id="@+id/other_editText"
+                style="@style/answers_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:hint="Any Other" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#68EFAD"
+                android:onClick="checkResult"
+                android:text="Show Score"
+                android:textColor="#043a6b"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
